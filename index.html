@@ -19,49 +19,15 @@ body {
   padding: 20px;
   text-align: center;
 }
-.leftcolumn {   
-  float: left;
-  width: 50%;
-}
-	.rightcolumn {
-  float: right;
-  width: 50%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
-	.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-	.card {
-  background-color: rgb(255, 204, 0);
-  padding: 20px;
-  margin-top: 20px;
-		.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-	
-		.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-		@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
+
   }
 }
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
   background-color: black;
-/* Style the topnav links */
-.topnav a {
+}
+	.topnav a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -69,12 +35,70 @@ body {
   padding: 14px 16px;
   text-decoration: none;
 }
-
-/* Change color on hover */
-.topnav a:hover {
+	.topnav a:hover {
   background-color: #ddd;
   color: red;
 }
+	aside {
+  width: 30%;
+  padding-left: 12px;
+  margin-left: 12px;
+  float: right;
+  font-style: italic; 
+  background-color: rgb(255, 211, 104);
+}
+	.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+	aside {
+  width: 30%;
+  padding-left: 12px;
+  margin-left: 12px;
+  float: right;
+  font-style: italic; 
+  background-color: rgb(255, 211, 104);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -88,110 +112,189 @@ body {
   <a href="#">Movies</a>
   <a href="#">Characters</a>
 </div>
+
 	<div class="row">
-  <div class="leftcolumn">
+  <div class="center">
     <div class="card">
-      <h2 style="color:rgb(174, 0, 0)";>She-Hulk: Attorney at Law</h2>
-      <h5>Title description, Dec 7, 2017</h5>
+      <h2>She-Hulk: Attorney at Law</h2>
+      <h5>&#916;&#10024;&#10069;</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  <aside>
+<p>Key<br>
+&#916;= introduces a new hero<br>
+&#10024;=has/features a magic user<br>
+&#10069;=features an original avenger</p>
+</aside>
+      <p>The show focuses on Jeniffer Walters, a lawyer who becomes She-Hulk after getting some of Hulk's blood into her blood stream. In this show, Jennifer tries find a balance between her human self and Hulk self, her job and villans who want to fight her/steal her blood.</p>
     </div>
-    <div class="card">
-      <h2 style="color:rgb(174, 0, 0)";>Ms Marvel</h2>
-      <h5>Title description, Sep 2, 2017</h5>
+	  <div class="card">
+      <h2>Ms Marvel</h2>
+      <h5>&#916;</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <aside>
+<p>Key<br>
+&#916;= introduces a new hero<br>
+&#10024;=has/features a magic user<br>
+&#10069;=features an original avenger</p>
+</aside>
+      <p>Kamala Khan, a teenager and Avenger superfan from New Jersey, discovers that she has powers thanks to a piece of jewelry passed down from her grandmother</p>
     </div>
-  </div>
-		<div class="row">
-  <div class="rightcolumn">
-    <div class="card">
-      <h2 style="color:rgb(174, 0, 0)";>Moonknight</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
   </div>
   <div class="row">
-  <div class="leftcolumn">
+  <div class="center">
     <div class="card">
-      <h2 style="color:rgb(174, 0, 0)";>Hawkeye</h2>
-      <h5>Title description, Dec 7, 2017</h5>
+      <h2>Moonknight</h2>
+      <h5>&#916;</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <aside>
+<p>Key<br>
+&#916;= introduces a new hero<br>
+&#10024;=has/features a magic user<br>
+&#10069;=features an original avenger</p>
+</aside>
+      <p>Steven Grant learns that he has D.I.D and that one of his identities (and the host of their body) named Mark Spector is a servant of Khonshu, an egyptian god of the moon.</p>
     </div>
-    <div class="card">
-      <h2 style="color:rgb(174, 0, 0)";>Loki</h2>
-      <h5>Title description, Sep 2, 2017</h5>
+	   <div class="card">
+      <h2>Hawkeye</h2>
+      <h5>&#916;&#10069;</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <aside>
+<p>Key<br>
+&#916;= introduces a new hero<br>
+&#10024;=has/features a magic user<br>
+&#10069;=features an original avenger</p>
+</aside>
+      <p>Kate Bishop uses the Ronin suit which leads to Clint Barton finding her and them teaming up.</p>
     </div>
   </div>
-  <div class="rightcolumn">
+ <div class="row">
+  <div class="center">
     <div class="card">
-      <h2 style="color:rgb(174, 0, 0)";>Falcon and the Winter Soldier</h2>
-      <h5>Title description, Sep 2, 2017</h5>
+      <h2>Loki</h2>
+      <h5>n/a</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <aside>
+<p>Key<br>
+&#916;= introduces a new hero<br>
+&#10024;=has/features a magic user<br>
+&#10069;=features an original avenger</p>
+</aside>
+      <p>After Loki escapes with the Tessaract after the events of Avengers: Endgame, he is arrested by the Time Variance Authority. After being arrested, Loki teams up with Mobius to find a threat to the TVA.</p>
+    </div>
+	  <div class="card">
+      <h2>Falcon and the Winter Soldier</h2>
+      <h5>n/a</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <aside>
+<p>Key<br>
+&#916;= introduces a new hero<br>
+&#10024;=has/features a magic user<br>
+&#10069;=features an original avenger</p>
+</aside>
+      <p> Sam Wilson (Falcon) and the fromer Winter Soldier (Bucky Barnes) team up to go against a group of people who want their lives to go back to the way it was when people were still blipped.</p>
+    </div>
   </div>
   <div class="row">
-  <div class="leftcolumn">
+  <div class="center">
     <div class="card">
-      <h2 style="color:rgb(174, 0, 0)";>Wandavision</h2>
-      <h5>Title description, Dec 7, 2017</h5>
+      <h2>WandaVision</h2>
+      <h5>&#916;&#10024;</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <aside>
+<p>Key<br>
+&#916;= introduces a new hero<br>
+&#10024;=has/features a magic user<br>
+&#10069;=features an original avenger</p>
+</aside>
+      <p>What starts off as a quirky yet eerie show focuses on Wanda Maximoff and what appears to be Vision in a town called Westview.</p>
     </div>
-    <div class="card">
-      <h2 style="color:rgb(174, 0, 0)";>Daredevil</h2>
-      <h5>Title description, Sep 2, 2017</h5>
+	  <div class="card">
+      <h2>Daredevil</h2>
+      <h5>&#916;</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <aside>
+<p>Key<br>
+&#916;= introduces a new hero<br>
+&#10024;=has/features a magic user<br>
+&#10069;=features an original avenger</p>
+</aside>
+      <p>Daredevil focuses on Matt Murdock and how he struggles to find balance with his double life between being a vigilante and being a lawyer.</p>
     </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2 style="color:rgb(174, 0, 0)";>The Punisher</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
   </div>
   <div class="row">
-  <div class="leftcolumn">
+  <div class="center">
     <div class="card">
-      <h2 style="color:rgb(174, 0, 0)";>Luke Cage</h2>
-      <h5>Title description, Dec 7, 2017</h5>
+      <h2>Punisher</h2>
+      <h5>n/a</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <aside>
+<p>Key<br>
+&#916;= introduces a new hero<br>
+&#10024;=has/features a magic user<br>
+&#10069;=features an original avenger</p>
+</aside>
+      <p>&#9830;to be filled in once I watch the show&#9830;</p>
     </div>
     <div class="card">
-      <h2 style="color:rgb(174, 0, 0)";>Jessica Jones</h2>
-      <h5>Title description, Sep 2, 2017</h5>
+      <h2>Jessica Jones</h2>
+      <h5>n/a</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <aside>
+<p>Key<br>
+&#916;= introduces a new hero<br>
+&#10024;=has/features a magic user<br>
+&#10069;=features an original avenger</p>
+</aside>
+      <p>&#9830;to be filled in once I watch the show&#9830;</p>
     </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2 style="color:rgb(174, 0, 0)";>Iron Fist</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
   </div>
   <div class="row">
-  <div class="leftcolumn">
+  <div class="center">
     <div class="card">
-      <h2 style="color:rgb(174, 0, 0)";>The Defenders</h2>
-      <h5>Title description, Dec 7, 2017</h5>
+      <h2>Luke Cage</h2>
+      <h5>n/a</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <aside>
+<p>Key<br>
+&#916;= introduces a new hero<br>
+&#10024;=has/features a magic user<br>
+&#10069;=features an original avenger</p>
+</aside>
+      <p>&#9830;to be filled in once I watch the show&#9830;</p>
+    </div>
+    <div class="card">
+      <h2>Iron Fist</h2>
+      <h5>n/a</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <aside>
+<p>Key<br>
+&#916;= introduces a new hero<br>
+&#10024;=has/features a magic user<br>
+&#10069;=features an original avenger</p>
+</aside>
+      <p>&#9830;to be filled in once I watch the show&#9830;</p>
+    </div>
+  </div>
+  <div class="row">
+  <div class="center">
+    <div class="card">
+      <h2>The Defenders</h2>
+      <h5>n/a</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <aside>
+<p>Key<br>
+&#916;= introduces a new hero<br>
+&#10024;=has/features a magic user<br>
+&#10069;=features an original avenger</p>
+</aside>
+      <p>A team up between Jessica Jones, Daredevil, Luke Cage, and Iron Fist in order to stop an organization called The Hand.</p>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  <h2 "color:rgb(174, 0, 0)">Disclaimer: This website is not actually a part of Marvel</h2>
+  <h2>&#9940;Disclaimer: this website has no actual connection to the Marvel franchise&#9940;</h2>
 </div>
 
 </body>
 </html>
-
