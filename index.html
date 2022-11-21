@@ -106,6 +106,42 @@ body {
     padding: 0;
   }
 }
+	.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: yellow;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: yellow;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
 
 </style>
 </head>
@@ -115,14 +151,21 @@ body {
   <h1 style="color:white";>Marvel Cinematic Universe</h1>
 </div>
 
-<div class="topnav">
-  <a href="#">Shows</a>
-  <a href="#">Movies</a>
-  <a href="#">Characters</a>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Characters')">Characters</button>
+  <button class="tablinks" onclick="openCity(event, 'Movies')">Movies</button>
+  <button class="tablinks" onclick="openCity(event, 'Shows')">Shows</button>
+</div>
+	
+	<div id="Home" class="tabcontent">
+  <h3>This is the home page</h3>
 </div>
 
-	<div class="row">
-  <div class="center">
+
+
+	
+<div id="Shows" class="tabcontent">
     <div class="card">
       <h2 style="color:rgb(201,0,0);">She-Hulk: Attorney at Law</h2>
       <h5>&#916;&#10024;&#10069;</h5>
@@ -135,6 +178,7 @@ body {
 </aside>
       <p>The show focuses on Jeniffer Walters, a lawyer who becomes She-Hulk after getting some of Hulk's blood into her blood stream. In this show, Jennifer tries find a balance between her human self and Hulk self, her job and villans who want to fight her/steal her blood.</p>
     </div>
+	  
 	  <div class="card">
       <h2 style="color:rgb(201,0,0);">Ms Marvel</h2>
       <h5>&#916;</h5>
@@ -145,27 +189,27 @@ body {
 &#10024;=has/features a magic user<br>
 &#10069;=features an original avenger</p>
 </aside>
-      <p>Kamala Khan, a teenager and Avenger superfan from New Jersey, discovers that she has powers thanks to a piece of jewelry passed down from her grandmother</p>
+      <p>Kamala Khan, a teenager and Avenger superfan from New Jersey, discovers that she has powers thanks to a piece of jewelry passed down from her grandmother. Kamals tries to harness her new powers while two different groups try to come after her.</p>
     </div>
   </div>
-  <div class="row">
-  <div class="center">
+
     <div class="card">
       <h2 style="color:rgb(201,0,0);">Moonknight</h2>
       <h5>&#916;</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
+      <img style="height:300px;" src= "moonknight 1.jpg">
       <aside>
 <p><b>Key</b><br>
 &#916;= introduces a new hero<br>
 &#10024;=has/features a magic user<br>
 &#10069;=features an original avenger</p>
 </aside>
-      <p>Steven Grant learns that he has D.I.D and that one of his identities (and the host of their body) named Mark Spector is a servant of Khonshu, an egyptian god of the moon.</p>
+      <p>Steven Grant learns that he has D.I.D and that one of his identities (and the host of their body) named Mark Spector is a servant of Khonshu, an egyptian god of the moon. Steven, Marc and Layla try to stop Harrow from killing people and freeing Ammit, the egyptian crocodile goddess.</p>
     </div>
+	
 	   <div class="card">
       <h2 style="color:rgb(201,0,0);">Hawkeye</h2>
       <h5>&#916;&#10069;</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
+      <img style="height:300px;" src= "Hawkeye-show.jpg">
       <aside>
 <p><b>Key</b><br>
 &#916;= introduces a new hero<br>
@@ -174,13 +218,11 @@ body {
 </aside>
       <p>Kate Bishop uses the Ronin suit which leads to Clint Barton finding her and them teaming up.</p>
     </div>
-  </div>
- <div class="row">
-  <div class="center">
+ 
     <div class="card">
       <h2 style="color:rgb(201,0,0);">Loki</h2>
       <h5>n/a</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
+      <img style="height:300px;" src= "loki show.jpg">
       <aside>
 <p><b>Key</b><br>
 &#916;= introduces a new hero<br>
@@ -189,10 +231,11 @@ body {
 </aside>
       <p>After Loki escapes with the Tessaract after the events of Avengers: Endgame, he is arrested by the Time Variance Authority. After being arrested, Loki teams up with Mobius to find a threat to the TVA.</p>
     </div>
+	
 	  <div class="card">
       <h2 style="color:rgb(201,0,0);">Falcon and the Winter Soldier</h2>
       <h5>n/a</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
+      <img style="height:300px;" src= "falcon-and-the-winter-soldier.jpg">
       <aside>
 <p><b>Key</b><br>
 &#916;= introduces a new hero<br>
@@ -201,14 +244,12 @@ body {
 </aside>
       <p> Sam Wilson (Falcon) and the fromer Winter Soldier (Bucky Barnes) team up to go against a group of people who want their lives to go back to the way it was when people were still blipped.</p>
     </div>
-  </div>
-  <div class="row">
-  <div class="center">
+  
     <div class="card">
       <h2 style="color:rgb(201,0,0);">WandaVision</h2>
       <h5>&#916;&#10024;</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <aside>
+      <img style="height:200px;" src="wanda babies.jpg">
+		   <aside>
 <p><b>Key</b><br>
 &#916;= introduces a new hero<br>
 &#10024;=has/features a magic user<br>
@@ -216,10 +257,11 @@ body {
 </aside>
       <p>What starts off as a quirky yet eerie show focuses on Wanda Maximoff and what appears to be Vision in a town called Westview.</p>
     </div>
+	  
 	  <div class="card">
       <h2 style="color:rgb(201,0,0);">Daredevil</h2>
       <h5>&#916;</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
+      <img style="height:300px;" src= "daredevil.jpg">
       <aside>
 <p><b>Key</b><br>
 &#916;= introduces a new hero<br>
@@ -228,13 +270,11 @@ body {
 </aside>
       <p>Daredevil focuses on Matt Murdock and how he struggles to find balance with his double life between being a vigilante and being a lawyer.</p>
     </div>
-  </div>
-  <div class="row">
-  <div class="center">
+  
     <div class="card">
       <h2 style="color:rgb(201,0,0);">The Punisher</h2>
       <h5>n/a</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
+      <img style="height:300px;" src= "punisher.jpg">
       <aside>
 <p><b>Key</b><br>
 &#916;= introduces a new hero<br>
@@ -243,10 +283,11 @@ body {
 </aside>
       <p>&#9830;to be filled in once I watch the show&#9830;</p>
     </div>
+	  
     <div class="card">
       <h2 style="color:rgb(201,0,0);">Jessica Jones</h2>
       <h5>n/a</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
+      <img style="height:300px;" src= "jessica jones.jpg">
       <aside>
 <p><b>Key</b><br>
 &#916;= introduces a new hero<br>
@@ -255,13 +296,11 @@ body {
 </aside>
       <p>&#9830;to be filled in once I watch the show&#9830;</p>
     </div>
-  </div>
-  <div class="row">
-  <div class="center">
+	  
     <div class="card">
       <h2 style="color:rgb(201,0,0);">Luke Cage</h2>
       <h5>n/a</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
+      <img style="height:300px;" src= "luke cage.jpg">
       <aside>
 <p><b>Key</b><br>
 &#916;= introduces a new hero<br>
@@ -270,10 +309,11 @@ body {
 </aside>
       <p>&#9830;to be filled in once I watch the show&#9830;</p>
     </div>
+	
     <div class="card">
       <h2 style="color:rgb(201,0,0);">Iron Fist</h2>
       <h5>n/a</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
+      <img style="height:300px;" src= "iron-fist1.jpg">
       <aside>
 <p><b>Key</b><br>
 &#916;= introduces a new hero<br>
@@ -282,13 +322,11 @@ body {
 </aside>
       <p>&#9830;to be filled in once I watch the show&#9830;</p>
     </div>
-  </div>
-  <div class="row">
-  <div class="center">
+    
     <div class="card">
       <h2 style="color:rgb(201,0,0);">The Defenders</h2>
       <h5>n/a</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
+      <img style="height:300px;" src= "defenders.jpg">
       <aside>
 <p><b>Key</b><br>
 &#916;= introduces a new hero<br>
@@ -297,12 +335,58 @@ body {
 </aside>
       <p>A team up between Jessica Jones, Daredevil, Luke Cage, and Iron Fist in order to stop an organization called The Hand.</p>
     </div>
-  </div>
+	  
+	  <div id="Movies" class="tabcontent">
+    <div class="card">
+      <h2 style="color:rgb(201,0,0);">Spider-Man: No Way Home</h2>
+      <h5>&#10024;</h5>
+		<img style="height:300px;" src= "spider-man-no-way-home-trailer-1637135624.jpg">
+  <aside>
+<p><b>Key</b><br>
+&#916;= introduces a new hero<br>
+&#10024;=has/features a magic user<br>
+&#10069;=features an original avenger</p>
+</aside>
+		<h6> features Spider-Men (Tom Holland, Andrew Garfield, Tobey Maguire), Doctor Strange, Green Goblin, Sandman and Doc Ock from Tobey Maguire's Spider-Man, Curtis Connors and Electro from Andrew Garfield's Spider-Man </h6>
+      <p>After the events of Spider-Man: Far from Home where his identity gets revealed, almost all of New York City turns against Spider-Man/Peter Parker. Peter Parker turns to Doctor Strange to help the world forget Peter after Peter, MJ and Ned all get rejected from MIT. Doctor Strange messes up the spell, which breaks open the multiverse and brings in villians like Doc Ock, the Green Goblin, Electro, the Lizard and Sandman into their universe.</p>
+    </div>
+</div>
+</div>
+		  <div id="Characters" class="tabcontent">
+    <div class="card">
+      <h2 style="color:rgb(201,0,0);">Iron Man</h2>
+      <h5>&#10069;</h5>
+		<img style="height:300px;" src= "iron-man-photo-robert-downey-jr-1013575.jpg">
+  <aside>
+<p><b>Key</b><br>
+&#916;= newer hero/character<br>
+&#10024;= magic user<br>
+&#10069;= an original avenger</p>
+</aside>
+      <p>not so secret identity, Tony Stark. Tony Stark is a billionaire who
+uses a high tech suit he built to fight with the Avengers. Tony Stark also built 
+a suit for his friend James "Rhodey" Rhodes, also known as War Machine.</p>
+    </div>
 </div>
 
 <div class="footer">
   <h2>&#9940;Disclaimer: this website has no actual connection to the Marvel franchise&#9940;</h2>
 </div>
 
+	  <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 </body>
 </html>
